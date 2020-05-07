@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Vivekch05/movie-series-info/static/css/main.9484c022.chunk.css",
+    "main.js": "/Vivekch05/movie-series-info/static/js/main.d5bdeada.chunk.js",
+    "main.js.map": "/Vivekch05/movie-series-info/static/js/main.d5bdeada.chunk.js.map",
+    "runtime-main.js": "/Vivekch05/movie-series-info/static/js/runtime-main.c2b5a899.js",
+    "runtime-main.js.map": "/Vivekch05/movie-series-info/static/js/runtime-main.c2b5a899.js.map",
+    "static/js/2.2dfc6ebb.chunk.js": "/Vivekch05/movie-series-info/static/js/2.2dfc6ebb.chunk.js",
+    "static/js/2.2dfc6ebb.chunk.js.map": "/Vivekch05/movie-series-info/static/js/2.2dfc6ebb.chunk.js.map",
+    "index.html": "/Vivekch05/movie-series-info/index.html",
+    "precache-manifest.878e759d9ab18fae509dd86869b4abd2.js": "/Vivekch05/movie-series-info/precache-manifest.878e759d9ab18fae509dd86869b4abd2.js",
+    "service-worker.js": "/Vivekch05/movie-series-info/service-worker.js",
+    "static/css/main.9484c022.chunk.css.map": "/Vivekch05/movie-series-info/static/css/main.9484c022.chunk.css.map",
+    "static/js/2.2dfc6ebb.chunk.js.LICENSE.txt": "/Vivekch05/movie-series-info/static/js/2.2dfc6ebb.chunk.js.LICENSE.txt",
+    "static/media/spinner.gif": "/Vivekch05/movie-series-info/static/media/spinner.8ee7fcb9.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2b5a899.js",
+    "static/js/2.2dfc6ebb.chunk.js",
+    "static/css/main.9484c022.chunk.css",
+    "static/js/main.d5bdeada.chunk.js"
+  ]
+}
