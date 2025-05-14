@@ -1,3 +1,3 @@
-module.exports={
-    APIKey:'35db4827'
+module.exports = {
+    APIKey: process.env.REACT_APP_OMDB_API_KEY
 }

@@ -3,36 +3,52 @@ import { searchMovie, fetchMovie, setLoading } from '../../actions/searchActions
 import { connect } from 'react-redux';
 
 class SearchForm extends Component {
+    state = {
+        searchText: ''
+    };
 
     handleChange = e => {
-        this.props.searchMovie(e.target.value);
+        const searchText = e.target.value;
+        this.setState({ searchText });
+        this.props.searchMovie(searchText);
     }
+
     handleSubmit = e => {
         e.preventDefault();
-        this.props.fetchMovie(this.props.text);
-        //console.log(this.props.fetchMovie(this.props.text));
-        this.props.setLoading();
+        if (this.state.searchText.trim()) {
+            this.props.setLoading();
+            this.props.fetchMovie(this.state.searchText);
+        }
     }
+
     render() {
         return (
             <div className="search-form">
-                <h1>
-                    <i className="fa fa-search" /> Search for a movie ,TV series ..
-                </h1>
-                <form id="searchForm" onSubmit={this.handleSubmit}>
-                    <input
-                        type="text"
-                        name="searchText"
-                        placeholder="Search Movies, TV Series ..."
-                        onChange={this.handleChange}
-                    />
-                    <button type="submit">
+                <div className="search-form__header">
+                    <h2 className="search-form__title">
+                        Find Movies, TV Shows and more
+                    </h2>
+                    <p className="search-form__subtitle">
+                        Search through millions of movies and TV shows
+                    </p>
+                </div>
+                <form className="search-form__container" onSubmit={this.handleSubmit}>
+                    <div className="search-form__input-group">
+                        <i className="fas fa-search search-form__icon"></i>
+                        <input
+                            type="text"
+                            className="search-form__input"
+                            placeholder="Search by title..."
+                            value={this.state.searchText}
+                            onChange={this.handleChange}
+                        />
+                    </div>
+                    <button type="submit" className="search-form__button">
                         Search
                     </button>
                 </form>
-
             </div>
-        )
+        );
     }
 }
 
